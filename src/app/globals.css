@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f71ca7;       /* Rose pastel */
+  --foreground: #171717;         /* Texte foncé */
+  --primary: #d63384;            /* Rose framboise - pour boutons */
+  --accent: #ffdee9;             /* Rose très clair - hover ou fond clair */
+  --border-color: #e2a9b5; 
 }
 
 @theme inline {
@@ -19,8 +22,12 @@
   }
 }
 
-body {
-  background: var(--background);
+main {
+
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

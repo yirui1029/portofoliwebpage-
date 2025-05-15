@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Cinéfilms",
+        "description": "Projet React native de fin d'études à la Capsule. réalisé en deux semaines avec une équipe de 5 étudiants. Application de rencontre pour cinéphiles.",
+        "image": "https://raw.githubusercontent.com/Blackers33/cinefilms/refs/heads/main/cinefilms_preview.png",
+        "tags": ["React Native", "Express", "MongoDB", "Node.js"],
+        "githubUrl": "https://github.com/Blackers33/cinefilms"
+    },
+    {
+        "title": "Portfolio",
+        "description": "",
+        "image": "https://raw.githubusercontent.com/Blackers33/portfolio/refs/heads/main/preview.png",
+        "tags": ["Next.js", "Tailwind CSS", "TypeScript"],
+        "githubUrl": ""
+    }
+]
