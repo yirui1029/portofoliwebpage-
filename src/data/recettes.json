@@ -1,15 +1,44 @@
+
 [
   {
     "id": 1,
-    "title": "",
-    "ingredients": [],
-    "instructions": [""],
-    "img":[
+    "title": "Gâteau au chocolat",
+    "temps_preparation": "15 minutes",
+    "temps_cuisson": "25 minutes",
+    "ingredients": [
       {
-        "src":"",
-        "alt": ""
+        "nom": "Farine",
+        "quantité": "200g"
+      },
+      {
+        "nom": "Sucre",
+        "quantité": "150g"
+      },
+      {
+        "nom": "Beurre",
+        "quantité": "100g"
+      },
+      {
+        "nom": "Chocolat noir",
+        "quantité": "200g"
+      },
+      {
+        "nom": "Œufs",
+        "quantité": "3"
       }
     ],
+    "instructions": [
+      { "1": "Préchauffez le four à 180°C." },
+      { "2": "Faites fondre le chocolat et le beurre au bain-marie." },
+      { "3": "Mélangez les œufs avec le sucre, puis ajoutez la farine." },
+      { "4": "Incorporez le mélange chocolat/beurre." },
+      { "5": "Versez dans un moule beurré et enfournez pendant 25 minutes." }
+    ],
+    "img": [
+      {
+        "src": "https://res.cloudinary.com/dhmuguupr/image/upload/v1747575919/vue-de-face-du-gateau-au-chocolat-sucre-sur-le-stand_adz1tl.jpg",
+        "alt": "Un délicieux gâteau au chocolat"
+      }
+    ]
   }
-  
 ]
