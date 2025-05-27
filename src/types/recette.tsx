@@ -9,7 +9,7 @@ export type Recette = {
   temps_preparation: string;
   temps_cuisson: string;
   ingredients: Ingredient[];
-  instructions: { [step: string]: string }[]; // conforme à ton JSON
+  instructions: { [step: string]: string }[]; 
   img: {
     src: string;
     alt?: string;
