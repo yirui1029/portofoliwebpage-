@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav className="relative items-center justify-center p-4 rounded-full">
-      <ul className="flex gap-6 text-sm font-medium text-gray-700 dark:text-gray-400">
+      <ul className="flex gap-6 text-2xl sm:text-4xl font-medium text-gray-700 dark:text-gray-400">
         {links.map((link) => (
           <li key={link.href} className="relative group">
             <Link
