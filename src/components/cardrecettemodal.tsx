@@ -2,13 +2,43 @@
 
 import { useState } from "react";
 
-export default function Recettecardmodal({selectedRecette, onClose}) {
-  
-  const [showmodal, setShowModal] = useState(false);
+interface RecetteImage {
+  src: string;
+  alt?: string;
+}
+
+interface Ingredient {
+  nom: string;
+  quantité: string;
+}
+
+interface Instruction {
+  [key: string]: string;
+}
+
+interface Recette {
+  title: string;
+  img: RecetteImage[];
+  temps_preparation: string;
+  temps_cuisson: string;
+  ingredients: Ingredient[];
+  instructions: Instruction[];
+}
+
+interface RecetteCardModalProps {
+  selectedRecette: Recette;
+  onClose: () => void;
+}
+
+export default function Recettecardmodal({selectedRecette, onClose}: RecetteCardModalProps) {
+
+  const [showModal, setShowModal] = useState(true);
   const onclose = () => {
     setShowModal(false);
     onClose();
   };
+
+    if (!showModal) return null;  // 
 
   return (
     <div className="fixed inset-0 bg-[linear-gradient(to_right,_#f6a975,_#ffffff)] bg-opacity-50 flex items-center justify-center z-50 overflow-y-auto " onClick={onclose}>
@@ -50,3 +80,4 @@ export default function Recettecardmodal({selectedRecette, onClose}) {
         </div>
   );
 }
+

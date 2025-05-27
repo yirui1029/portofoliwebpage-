@@ -1,9 +1,6 @@
 "use client";
 import Header from "../../components/Header";
-import Recettecardmodal from "@/components/cardrecettemodal";
 import Recettecard from "@/components/cardrecette";
-import { useRef, useState } from "react";
-import { useEffect } from "react";
 import recettesdata from "@/data/recettes.json";
 import Footer from "@/components/footer";
 

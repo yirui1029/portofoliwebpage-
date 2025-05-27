@@ -1,7 +1,5 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { useEffect } from "react";
 import Header from "./Header";
 import portofoliosdata from "@/data/projets.json";
 import Portofolis from "@/components/cardportofolio";
@@ -20,15 +18,15 @@ export default function Home() {
 
           {/* Intro */}
           <p className="text-lg mb-6 leading-relaxed">
-            D’origine chinoise et ancienne comptable reconvertie dans le
-            développement web. Passionnée par la technologie et l’innovation,
-            j’ai suivi une formation intensive dans le cadre de ma reconversion,
-            où j’ai appris à maîtriser{" "}
+            D&apos;origine chinoise et ancienne comptable reconvertie dans le
+            développement web. Passionnée par la technologie et l&apos;innovation,
+            j&apos;ai suivi une formation intensive dans le cadre de ma reconversion,
+            où j&apos;ai appris à maîtriser{" "}
             <span className="font-medium text-blue-700">
               React, React Native et Next.js
             </span>
-            . J’ai également eu l’opportunité de développer une application
-            mobile en utilisant React Native et Node.js, ce qui m’a permis de
+            . J&apos;ai également eu l&apos;opportunité de développer une application
+            mobile en utilisant React Native et Node.js, ce qui m&apos;a permis de
             mettre en pratique mes compétences sur un projet concret.
           </p>
 
@@ -38,15 +36,15 @@ export default function Home() {
           </h3>
           <ul className="list-disc list-inside text-base space-y-1">
             <li>Autonome et rigoureux dans le développement</li>
-            <li>Esprit d’analyse et sens pratique</li>
-            <li>Bon sens du design et de l'expérience utilisateur</li>
-            <li>À l’aise en travail d’équipe et communication</li>
+            <li>Esprit d&apos;analyse et sens pratique</li>
+            <li>Bon sens du design et de l&apos;expérience utilisateur</li>
+            <li>À l&apos;aise en travail d&apos;équipe et communication</li>
             <li>Capacité à apprendre rapidement de nouvelles technologies</li>
           </ul>
 
           {/* Conclusion */}
           <p className="text-lg mt-6 leading-relaxed">
-            🎯 Aujourd’hui, je suis à la recherche de{" "}
+            🎯 Aujourd&apos;hui, je suis à la recherche de{" "}
             <span className="font-medium text-orange-600">
               nouvelles opportunités
             </span>{" "}
@@ -54,7 +52,7 @@ export default function Home() {
             projets innovants et à fort impact.
           </p>
           <p className="text-lg mt-2 leading-relaxed">
-            📩 N’hésitez pas à me{" "}
+            📩 N&apos;hésitez pas à me{" "}
             <a
               href="/contact"
               className="text-blue-600 underline hover:text-blue-800"
@@ -73,7 +71,7 @@ export default function Home() {
           </h2>
         </div>
         <div className="flex flex-col items-center justify-between md:flex-col gap-30">
-        <Portofolis portfolios={portofoliosdata} />
+          <Portofolis portfolios={portofoliosdata} />
         </div>
       </section>
       <Footer></Footer>

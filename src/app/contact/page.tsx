@@ -1,16 +1,13 @@
 "use client";
 import Header from "../../components/Header";
 import { useRef, useState } from "react";
-import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import Footer from "@/components/footer";
 
 export default function ContactPage() {
-  const [showHeader, setShowHeader] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [isSended, setIsSended] = useState(false);
 
-  const lastScrollY = useRef(0);
   // variable pour le formulaire
   const {
     register,
@@ -29,7 +26,6 @@ export default function ContactPage() {
         body: JSON.stringify(data),
       });
 
-      const result = await response.json();
 
       setIsLoading(false);
 
