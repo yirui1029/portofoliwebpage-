@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Roboto_Mono } from "next/font/google";
+import Head from "next/head"; // ✅ Import de Head
 import "./globals.css";
 
 const roboto = Roboto({
@@ -25,6 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        {/* ✅ Meta tag pour rendre le site responsive */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <body
         className={`${roboto.variable} ${robotoMono.variable} antialiased`}
       >
