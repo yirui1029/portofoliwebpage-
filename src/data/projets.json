@@ -1,16 +1,26 @@
 [
-    {
-        "title": "Cinéfilms",
-        "description": "Projet React native de fin d'études à la Capsule. réalisé en deux semaines avec une équipe de 5 étudiants. Application de rencontre pour cinéphiles.",
-        "image": "https://raw.githubusercontent.com/Blackers33/cinefilms/refs/heads/main/cinefilms_preview.png",
-        "tags": ["React Native", "Express", "MongoDB", "Node.js"],
-        "githubUrl": "https://github.com/Blackers33/cinefilms"
-    },
-    {
-        "title": "Portfolio",
-        "description": "",
-        "image": "https://raw.githubusercontent.com/Blackers33/portfolio/refs/heads/main/preview.png",
-        "tags": ["Next.js", "Tailwind CSS", "TypeScript"],
-        "githubUrl": ""
-    }
+  {
+    "title": "Cinéfilms",
+    "description": "Projet React native de fin d'études à la Capsule. réalisé en deux semaines avec une équipe de 5 étudiants. Application de rencontre pour cinéphiles.",
+    "image": [{"alt": "homeScreen", "src": "https://res.cloudinary.com/dhmuguupr/image/upload/v1747674295/Screenshot_20250324_134535_host.exp.exponent_1_n8zsgb.jpg"},
+             {"alt": "EventsScreenameliored", "src": "https://res.cloudinary.com/dhmuguupr/image/upload/v1747674295/Screenshot_20250519_182152_com.huawei.himovie.local_xfqa1v.jpg"},
+             {"alt": "ProfilScreen", "src": "https://res.cloudinary.com/dhmuguupr/image/upload/v1747674296/Screenshot_20250324_134615_host.exp.exponent_xspfkb.jpg"},
+             {"alt": "EventScreen", "src": "https://res.cloudinary.com/dhmuguupr/image/upload/v1747674297/Screenshot_20250324_134554_host.exp.exponent_1_tx7isi.jpg"}],
+    "tags": ["React Native", "Express", "MongoDB", "Node.js"],
+    "githubUrl": "https://github.com/yirui1029/cinefilms"
+  },
+  {
+    "title": "Portfolio",
+    "description": "Bienvenue sur mon portfolio, inspiré par la peinture traditionnelle chinoise. Je partage ici mes projets et mes recettes préférées de plats asiatiques. Le site est stylisé avec Tailwind CSS.",
+    "image": [{"alt": "homeScreen", "src": "https://res.cloudinary.com/dhmuguupr/image/upload/v1747683516/Capture_d_%C3%A9cran_2025-05-19_213815_swkb2a.png"}],
+    "tags": ["Next.js", "Tailwind CSS", "TypeScript"],
+    "githubUrl": "https://github.com/yirui1029/portofoliwebpage-"
+  },
+  {
+    "title": "Site de dropshipping sino-français",
+    "description":"Plateforme B2B de dropshipping facilitant les échanges commerciaux entre la France et la Chine. Le site est actuellement en cours de développement. J'apprends à concevoir le back-end avec Spring Boot, tandis que le front-end sera développé avec le framework Angular.",
+    "image": [{"alt": "LOGO", "src": "https://res.cloudinary.com/dhmuguupr/image/upload/v1748340079/Design_sans_titre_nobw0h.png"}],
+    "tags": ["Java", "Spring Boot", "Angular", "MySQL", "Node.js"],
+    "githubUrl": ""
+  }
 ]

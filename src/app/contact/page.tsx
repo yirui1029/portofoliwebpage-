@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import { useRef, useState } from "react";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
+import Footer from "@/components/footer";
 
 export default function ContactPage() {
   const [showHeader, setShowHeader] = useState(true);
@@ -126,8 +127,10 @@ export default function ContactPage() {
               rapidement.
             </p>
           )}
+          <p className="text-center">Les emails de ce site sont envoyés via <span className="font-medium text-blue-700">SendGrid</span>.</p>
         </form>
       </div>
+      <Footer></Footer>
     </main>
   );
 }

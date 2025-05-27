@@ -1,44 +1,76 @@
 
 [
   {
-    "id": 1,
-    "title": "Gâteau au chocolat",
-    "temps_preparation": "15 minutes",
-    "temps_cuisson": "25 minutes",
-    "ingredients": [
-      {
-        "nom": "Farine",
-        "quantité": "200g"
-      },
-      {
-        "nom": "Sucre",
-        "quantité": "150g"
-      },
-      {
-        "nom": "Beurre",
-        "quantité": "100g"
-      },
-      {
-        "nom": "Chocolat noir",
-        "quantité": "200g"
-      },
-      {
-        "nom": "Œufs",
-        "quantité": "3"
-      }
-    ],
-    "instructions": [
-      { "1": "Préchauffez le four à 180°C." },
-      { "2": "Faites fondre le chocolat et le beurre au bain-marie." },
-      { "3": "Mélangez les œufs avec le sucre, puis ajoutez la farine." },
-      { "4": "Incorporez le mélange chocolat/beurre." },
-      { "5": "Versez dans un moule beurré et enfournez pendant 25 minutes." }
-    ],
-    "img": [
-      {
-        "src": "https://res.cloudinary.com/dhmuguupr/image/upload/v1747575919/vue-de-face-du-gateau-au-chocolat-sucre-sur-le-stand_adz1tl.jpg",
-        "alt": "Un délicieux gâteau au chocolat"
-      }
-    ]
-  }
+  "id": 1,
+  "title": "Magret de Canard aux Cinq Parfums 🦆",
+  "temps_preparation": "20 minutes",
+  "temps_cuisson": "15 minutes",
+  "ingredients": [
+    { "nom": "Magret de canard (tranché finement) 🦆", "quantité": "1" },
+    { "nom": "Oignon blanc 🧅", "quantité": "1 (coupé en fines lamelles)" },
+    { "nom": "Ail 🧄", "quantité": "2 gousses" },
+    { "nom": "Gingembre frais 🫚", "quantité": "2 cm (haché)" },
+    { "nom": "Poudre de cinq parfums chinois 🌿", "quantité": "1 c. à café" },
+    { "nom": "Poivre noir ⚫", "quantité": "1 pincée" },
+    { "nom": "Sauce soja claire 🫙", "quantité": "2 c. à soupe" },
+    { "nom": "Sauce soja épaisse 🫙", "quantité": "1 c. à café" },
+    { "nom": "Sauce huître 🦪", "quantité": "1 c. à soupe" },
+    { "nom": "Eau 💧", "quantité": "4 c. à soupe" },
+    { "nom": "Sucre 🍬", "quantité": "1 c. à soupe" },
+    { "nom": "Farine de pomme de terre 🥔", "quantité": "1 c. à café" }
+  ],
+  "instructions": [
+    { "1": "Retirez l'excès de gras du magret si désiré, puis coupez-le en fines tranches." },
+    { "2": "Dans un bol, mélangez les sauces (soja claire, soja épaisse, huître), l'eau, la poudre de cinq parfums, le poivre, le sucre, l'ail, le gingembre et la farine de pomme de terre pour créer la sauce." },
+    { "3": "Faites mariner les tranches de magret avec un peu de cette sauce pendant 15 à 20 minutes." },
+    { "4": "Faites sauter les oignons dans une poêle chaude." },
+    { "5": "Ajoutez les tranches de magret marinées et faites-les cuire à feu moyen jusqu'à ce qu'elles soient mi-cuites." },
+    { "6": "Versez le reste de la sauce dans la poêle et laissez épaissir légèrement." },
+    { "7": "Servez chaud avec du riz thaï parfumé 🍚 ou des légumes sautés 🥦." }
+  ],
+  "img": [
+    {
+      "src": "https://res.cloudinary.com/dhmuguupr/image/upload/v1747644993/IMG_20241106_195359_dwmsi9.jpg",
+      "alt": "Magret de canard aux cinq parfums servi avec des oignons caramélisés"
+    }
+  ]
+},
+{
+  "id": 2,
+  "title": "Raviolis Chinois Maison de la région Dongbei (Jiaozi) 🥟",
+  "temps_preparation": "60 minutes",
+  "temps_cuisson": "10 minutes",
+  "ingredients": [
+    { "nom": "Pâte à raviolis 🥟", "quantité": "30 disques (achetés ou faits maison)" },
+    { "nom": "Porc haché 🐖", "quantité": "300g" },
+    { "nom": "Chou chinois 🥬", "quantité": "150g (finement haché)" },
+    { "nom": "Œuf 🥚", "quantité": "1 (battu)" },
+    { "nom": "Champignons shiitake 🍄", "quantité": "50g (hachés)" },
+    { "nom": "Ciboule ou oignon vert 🌱", "quantité": "2 tiges (hachées)" },
+    { "nom": "Gingembre frais ou en poudre 🫚", "quantité": "1 c. à café (râpé)" },
+    { "nom": "Sauce soja claire 🫙", "quantité": "2 c. à soupe" },
+    { "nom": "Huile de sésame 🌰", "quantité": "1 c. à café" },
+    { "nom": "Sel 🧂", "quantité": "1/2 c. à café" },
+    { "nom": "Poivre de Sichuan ⚫", "quantité": "1 pincée" },
+    { "nom": "Épices aux cinq parfums 🌿", "quantité": "1/2 c. à café" },
+    { "nom": "Eau 💧", "quantité": "Un petit bol (pour sceller les bords)" },
+    { "nom": "Sauce soja-vinaigre et sauce pimentée sichuanaise 🌶️", "quantité": "Pour servir" }
+  ],
+  "instructions": [
+    { "1": "Dans un grand bol, mélangez le porc haché 🐖, le chou 🥬, les champignons 🍄, la ciboule 🌱, le gingembre 🫚, l’ail 🧄, l’œuf 🥚, la sauce soja 🟦, l’huile de sésame 🌰, le sel 🧂, le poivre de Sichuan ⚫ et les épices aux cinq parfums 🌿." },
+    { "2": "Déposez une petite cuillerée de farce au centre de chaque disque de pâte à ravioli 🥟." },
+    { "3": "Humidifiez les bords avec un peu d’eau 💧, pliez en demi-lune et scellez bien en pressant les bords." },
+    { "4": "Portez à ébullition une grande casserole d’eau 🫕." },
+    { "5": "Faites cuire les raviolis : ajoutez-les à l’eau bouillante et versez trois fois un verre d’eau froide dès que l’ébullition reprend, en attendant qu’ils remontent à la surface (astuce traditionnelle de cuisson)." },
+    { "6": "Égouttez-les et servez-les bien chauds avec la sauce soja-vinaigre ou une sauce pimentée sichuanaise 🌶️." }
+  ],
+  "img": [
+    {
+      "src": "https://res.cloudinary.com/dhmuguupr/image/upload/v1747652054/IMG_20240621_184738_g3wlug.jpg",
+      "alt": "Raviolis chinois maison (jiaozi) servis avec une sauce"
+    }
+  ]
+}
+
+
 ]

@@ -10,54 +10,76 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
       if (currentScrollY <= 0) {
-        setShowHeader(true); // tout en haut → montrer le header
+        setShowHeader(true);
       } else if (currentScrollY > lastScrollY.current) {
-        setShowHeader(false); // défilement vers le bas → cacher le header
+        setShowHeader(false);
       } else {
-        setShowHeader(true); // défilement vers le haut → montrer le header
+        setShowHeader(true);
       }
-
       lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <>
       {showHeader && (
-        <header className="fixed top-0 left-0 w-full flex h-[28vh] items-center justify-between p-4 bg-orange-300 text-white backdrop-blur-md" >
-          <img src="/backgroundhome.gif" alt="GIF header"
-            className="absolute inset-0 w-full h-full object-cover z-0 animate-fade-in" />
-          <div className="text-center">
-            <Image
-              src="/logo.png"
-              alt="logo de mon portfolio"
-              width={200}
-              height={200}
-              className="relative border-none rounded-full shadow-ig object-cover hover:contrast-150 transition-all duration-300 opacity-100 z-10"
-            />
+        <header className="fixed top-0 left-0 w-full bg-orange-300 text-white backdrop-blur-md z-50 overflow-hidden">
+          {/* Background GIF */}
+          <img
+            src="/backgroundhome.gif"
+            alt="GIF header"
+            className="absolute inset-0 w-full h-full object-cover z-0 animate-fade-in"
+          />
+
+          {/* Ligne principale */}
+          <div className="relative z-10 flex items-center justify-between h-full px-10">
+            {/* Logo à gauche */}
+            <div className="flex-shrink-0 mt-3">
+              <Image
+                src="/logo.png"
+                alt="logo de mon portfolio"
+                width={140}
+                height={140}
+                className="rounded-full shadow-lg object-cover hover:contrast-150 transition-all duration-300"
+              />
+            </div>
+
+            {/* Texte centré */}
+            <div className="text-center">
+              <h1 className="text-4xl font-bold">Yirui DUPUY</h1>
+              <p className="text-xl font-medium mt-2">
+                Développeuse web fullstack React, React Native, Next.js & Node.js
+              </p>
+            </div>
+
+            {/* Icônes à droite */}
+            <div className="flex gap-6 text-4xl text-white">
+              <a
+                href="https://github.com/yirui1029"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-black transition-colors duration-200"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yirui-dupuy-23078347"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-black transition-colors duration-200"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
-          <Navbar />
-          <div className="flex gap-6 align-middle justify-center items-center">
-            <a
-              href="https://github.com/yirui1029"
-              target="_blank"
-              rel="github noopener noreferrer"
-              className=" relative text-gray-600 hover:text-black text-5xl z-20"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yirui-dupuy-23078347"
-              target="_blank"
-              rel="linkedin noopener noreferrer"
-              className="relative text-gray-600 hover:text-black text-5xl z-20"
-            >
-              <FaLinkedin />
-            </a>
+
+          {/* Navbar en dessous */}
+          <div className="flex justify-end z-10 mt-4">
+            <Navbar />
           </div>
         </header>
       )}
