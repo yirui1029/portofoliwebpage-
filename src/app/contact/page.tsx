@@ -8,14 +8,21 @@ export default function ContactPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [isSended, setIsSended] = useState(false);
 
+  // Définir l'interface pour les champs du formulaire
+  interface ContactFormData {
+    name: string;
+    email: string;
+    message: string;
+  }
+
   // variable pour le formulaire
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm();
-  const onSubmit = async (data: any) => {
+  } = useForm<ContactFormData>();
+  const onSubmit = async (data: ContactFormData) => {
     if (!isLoading) {
       setIsLoading(true);
       const response = await fetch("/api/send-email", {
